@@ -56,14 +56,16 @@ section {
     background-size: contain;
     width: 849px;
     height: 223px;
-    padding-left: 30px;
 
 }
 
 .main-title {
     padding-top: 67px;
     color: #2B2D35;
-    font-size: 80px;
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -71,6 +73,9 @@ section {
     color: #2B2D35;
     font-size: 20px;
     font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -90,4 +95,47 @@ section {
 .button a {
     font-size: 20px;
     text-decoration: none;
+}
+
+.moving-planet {
+    background: url(img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+@keyframes planet-move {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(70px);
+    }
+}
+
+.moving-planet {
+    animation-name: planet-move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.title {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 80px;
+    box-shadow: 5px 5px 0 #000000;
+
+}
+
+.about-content{
+    
 }
