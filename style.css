@@ -126,13 +126,13 @@ section {
 }
 
 .title {
-    padding-top: 100px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FFF;
     font-size: 80px;
-    box-shadow: 5px 5px 0 #000000;
+    font-family: 'Comfortaa';
 
 }
 
@@ -229,4 +229,10 @@ section {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.works-block img{
+    margin: 0 20px;
+    width: 27%;
+    box-shadow: 7px 7px 0 #000000;
 }
