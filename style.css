@@ -231,8 +231,87 @@ section {
     animation-direction: alternate;
 }
 
-.works-block img{
+.works-block img {
     margin: 0 20px;
     width: 27%;
     box-shadow: 7px 7px 0 #000000;
+}
+
+.comments-block {
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.comment-card {
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.comment-card h3 {
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    padding: 10px;
+}
+
+.comment-card p {
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment {
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    height: 327px;
+    width: 361px;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment p {
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    max-width: 250px;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+footer {
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+
+.footer-info p {
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+}
+
+.footer-year p {
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+
+.footer-links a {
+    margin-right: 15px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
