@@ -467,4 +467,45 @@ nav {
         max-width: 290px;
     }
 
+    .mobile-button {
+        display: block;
+    }
+
 }
+
+.mobile-button {
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #200153;
+    min-height: 100vh;
+}
+
+.mobile-nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-links .nav-link {
+    margin-bottom: 30px;
+    width: 210px;
+    height: 50px;
+}
+
