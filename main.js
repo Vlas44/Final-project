@@ -1,4 +1,9 @@
-let menu = document.querySelector(".fixed-menu")
+document.querySelector(".mobile-button").addEventListener("click", function (event) {
+    document.querySelector(".mobile-menu").classList.toggle("");
+});
+
+
+let menu = document.querySelector(".fixed-menu");
 
 menu.addEventListener('click', function (event) {
     let clickTarget = event.target;
@@ -54,8 +59,4 @@ window.onscroll = function () {
     }
 };
 
-document.querySelector(".mobile-button").addEventListener("click",
-    function (event) {
-        document.querySelector(".mobile-menu").classList.toggle("hide");
-    });
 
